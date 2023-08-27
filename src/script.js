@@ -19,7 +19,7 @@ let engga = document.getElementById("engga");
 
 mau.addEventListener("click", (event) => {
   event.preventDefault();
-  window.location.href = "http://127.0.0.1:5500/src/lanjutan.html";
+  window.location.href = "http://127.0.0.1:5500/lanjutan.html";
 });
 
 engga.addEventListener("click", (event) => {
