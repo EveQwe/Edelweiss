@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Edelweiss - The Eternal Flower</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./img/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./img/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./img/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./img/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./img/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./img/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./img/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="w-screen min-h-screen p-10 mb-10">
+          <p class="indent-10 text-justify">
+            Jadi gini. Yang pertama aku mau minta kritik, koreksi atau apapun
+            itu tentang aku, dari waktu pertama kita ketemu sama yang kemarin
+            itu. Aku butuh masukan biar bisa jadi lebih baik gitu, h3h3. Btw,
+            kemarin itu bener bener pertama kali aku keluar ber-2 sama cewe
+            wkwkwk.
+          </p>
+
+          <div class="my-10">
+            <fieldset class="border border-black p-3">
+              <legend>Ketik disini ya</legend>
+
+              <form
+                id="form-kritik"
+                action="https://formspree.io/f/moqodbya"
+                method="post"
+              >
+                <textarea
+                  class="w-full border border-gray-300 focus:outline-none p-5"
+                  name="kritik"
+                  id="kritik"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+
+                <div class="w-full flex justify-end">
+                  <button
+                    type="submit"
+                    class="bg-black text-white p-3 focus:bg-gray-900 rounded-md text-sm"
+                  >
+                    Kalo udah klik button ini
+                  </button>
+                </div>
+              </form>
+            </fieldset>
+          </div>
+          <p class="indent-10 text-justify">
+            Ada beberapa hal yang mau aku bahas disini. Kalo kamu nyangka aku
+            cuma <span class="italic font-semibold">FOMO</span> doang, sebener
+            nya engga. Aku tuh cuma bingung harus gimana. Sori juga kalo kemarin
+            aku pasif banget. Kalo kamu mau tau, kadang kalo ngopi sama si agus
+            juga kita tuh cuma diem doang, ga ada yang diomongin, jadi bener
+            bener ngahuleng gitu. Kecuali kalo emang ada pembahasan.
+          </p>
+          <p class="indent-10 text-justify my-5">
+            Satu lagi. Kalo kamu minta waktu, sebenernya bisa aja aku luangin
+            kalo kamu nya minta. Aku tuh ga ada sibuk nya sebenernya. Ngopi sama
+            si agus hampir tiap hari aja aku sanggupin, yang jauh aja aku
+            datengin. Scroll dikit lagi. Mungkin itu poin utama nya.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div
+          class="w-screen h-screen bg-fixed bg-cover bg-center flex justify-center items-center"
+          style="background-image: url('./img/white-flower-focus-photo.jpg')"
+        >
+          <div class="mx-10">
+            <h1
+              class="text-white opacity-80 drop-shadow-md text-4xl italic font-bold"
+            >
+              "Is there any chance for me to get you?"
+            </h1>
+
+            <div class="my-10">
+              <a
+                id="yes"
+                class="border-white border-2 px-2 py-1 font-semibold text-sm bg-black opacity-60 text-white hover:bg-black hover:opacity-50"
+                >Yes</a
+              >
+              <a
+                id="no"
+                class="border-white border-2 px-2 py-1 font-semibold text-sm bg-black opacity-60 text-white hover:bg-black hover:opacity-50"
+                >No</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="content" class="hidden">
+        <div class="w-screen h-screen p-10">
+          <div id="isYes" class="text-justify hidden">
+            <div class="my-10">
+              <fieldset class="border border-black p-3">
+                <legend>Ketik disini ya</legend>
+                <p class="text-justify my-10">
+                  Kasih tau aku cara biar aku bisa paham sama ekspektasi kamu.
+                </p>
+                <form
+                  id="form-yes"
+                  action="https://formspree.io/f/xgejkqre"
+                  method="post"
+                >
+                  <textarea
+                    class="w-full border border-gray-300 focus:outline-none p-5"
+                    name="kritik"
+                    id="kritik"
+                    cols="30"
+                    rows="10"
+                    required
+                  ></textarea>
+
+                  <div class="w-full flex justify-end">
+                    <button
+                      type="submit"
+                      class="bg-black text-white p-3 focus:bg-gray-900 rounded-md text-sm"
+                    >
+                      Kalo udah klik button ini
+                    </button>
+                  </div>
+                </form>
+              </fieldset>
+            </div>
+          </div>
+          <div id="isNo" class="text-justify hidden">
+            <div class="my-10">
+              <fieldset class="border border-black p-3">
+                <legend>Ketik disini ya</legend>
+                <p class="text-justify my-10">
+                  Kasih aku alesan biar aku bisa surrend dengan tenang wkwkwk
+                </p>
+                <form
+                  id="form-no"
+                  action="https://formspree.io/f/xpzgdnkw"
+                  method="post"
+                >
+                  <textarea
+                    class="w-full border border-gray-300 focus:outline-none p-5"
+                    name="kritik"
+                    id="kritik"
+                    cols="30"
+                    rows="10"
+                    required
+                  ></textarea>
+
+                  <div class="w-full flex justify-end">
+                    <button
+                      type="submit"
+                      class="bg-black text-white p-3 focus:bg-gray-900 rounded-md text-sm"
+                    >
+                      Kalo udah klik button ini
+                    </button>
+                  </div>
+                </form>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <dialog id="dialog3" class="w-full h-1/2 bg-black opacity-80">
+        <div class="w-full h-full flex justify-center items-center text-white">
+          <div class="my-10">
+            <h1 class="text-2xl text-white">Tengkyu buat jawaban nya 👍</h1>
+
+            <div class="my-10">
+              <a
+                id="close"
+                class="border-white border-2 px-2 py-1 font-semibold text-sm text-white hover:bg-black hover:opacity-50"
+                >Close</a
+              >
+            </div>
+          </div>
+        </div>
+      </dialog>
+    </main>
+    <script src="lanjutan.js"></script>
+  </body>
+</html>
