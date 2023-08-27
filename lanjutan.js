@@ -53,7 +53,7 @@ formYes.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const url = event.target.action;
-  const formData = new FormData(kritik);
+  const formData = new FormData(formYes);
 
   fetch(url, {
     method: "POST",
@@ -73,7 +73,7 @@ formNo.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const url = event.target.action;
-  const formData = new FormData(kritik);
+  const formData = new FormData(formNo);
 
   fetch(url, {
     method: "POST",
